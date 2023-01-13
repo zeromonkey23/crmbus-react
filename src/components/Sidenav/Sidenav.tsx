@@ -33,26 +33,26 @@ const Sidenav = () => {
                       <span className='material-icons'>{menu.iconName}</span>
                       <span className='text-sm col-span-5'>{menu.title}</span>
                     </li>
-                    <ul>
-                      {menu.child &&
-                        menu.child.map((child) => {
-                          return (
-                            <div key={child.title}>
-                              <Link to={child.link}>
-                                <li className='grid grid-cols-6 gap-1 px-4 py-2 hover:bg-gray-100'>
-                                  <span className='material-icons'>
-                                    {child.iconName}
-                                  </span>
-                                  <span className='text-sm col-span-5'>
-                                    {child.title}
-                                  </span>
-                                </li>
-                              </Link>
-                            </div>
-                          );
-                        })}
-                    </ul>
                   </Link>
+                  <ul>
+                    {menu.child &&
+                      menu.child.map((child) => {
+                        return (
+                          <div key={child.title}>
+                            <Link to={child.link}>
+                              <li className='grid grid-cols-6 gap-1 px-4 py-2 hover:bg-gray-100'>
+                                <span className='material-icons'>
+                                  {child.iconName}
+                                </span>
+                                <span className='text-sm col-span-5'>
+                                  {child.title}
+                                </span>
+                              </li>
+                            </Link>
+                          </div>
+                        );
+                      })}
+                  </ul>
                 </div>
               );
             })}

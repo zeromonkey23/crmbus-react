@@ -29,7 +29,7 @@ const useView = () => {
     const url = `${process.env.REACT_APP_API_URL}api/v1/Authorize/login/${token}`;
     localStorage.clear();
 
-    return fetch(url)
+    return fetch(url, { cache: 'default' })
       .then((res) => {
         return res.json();
       })
