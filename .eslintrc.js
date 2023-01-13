@@ -1,10 +1,10 @@
 module.exports = {
-  'env': {
-    'browser': true,
-    'es2021': true,
-    'node': true,
+  env: {
+    browser: true,
+    es2021: true,
+    node: true,
   },
-  'extends': [
+  extends: [
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
@@ -12,12 +12,12 @@ module.exports = {
   overrides: [
     // override "simple-import-sort" config
     {
-      'files': ['*.js', '*.jsx', '*.ts', '*.tsx'],
-      'rules': {
+      files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
+      rules: {
         'simple-import-sort/imports': [
           'error',
           {
-            'groups': [
+            groups: [
               // Packages `react` related packages come first.
               ['^react', '^@?\\w'],
               // Internal packages.
@@ -29,42 +29,26 @@ module.exports = {
               // Other relative imports. Put same-folder imports and `.` last.
               ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
               // Style imports.
-              ['^.+\\.?(css)$']
-            ]
-          }
-        ]
-      }
-    }
+              ['^.+\\.?(css)$'],
+            ],
+          },
+        ],
+      },
+    },
   ],
-  'parser': '@typescript-eslint/parser',
-  'parserOptions': {
-    'ecmaVersion': 'latest',
-    'sourceType': 'module'
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
-  'plugins': [
-    'react',
-    '@typescript-eslint',
-    'eslint-plugin-simple-import-sort'
-  ],
-  'rules': {
-    'indent': [
-      'warn',
-      2
-    ],
-    'linebreak-style': [
-      'error',
-      'unix'
-    ],
-    'quotes': [
-      'error',
-      'single'
-    ],
-    'semi': [
-      'error',
-      'always'
-    ],
+  plugins: ['react', '@typescript-eslint', 'eslint-plugin-simple-import-sort'],
+  rules: {
+    indent: ['warn', 2],
+    'linebreak-style': 0,
+    quotes: ['error', 'single'],
+    semi: ['error', 'always'],
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
-    '@typescript-eslint/consistent-type-imports': 'warn'
-  }
+    '@typescript-eslint/consistent-type-imports': 'warn',
+  },
 };

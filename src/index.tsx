@@ -1,7 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+import Cas from './pages/Cas';
+import Dashboard from './pages/Dashboard';
+import ListCurriculum from './pages/ListCurriculum';
+import Login from './pages/Login';
+import NotFound from './pages/NotFound';
+import Unauthorized from './pages/Unauthorize';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
@@ -12,9 +18,16 @@ ReactDOM.render(
     <BrowserRouter>
       <React.Suspense fallback={<div>Loading</div>}>
         <Routes>
+          <Route path='/' element={<App />}>
+            <Route path='/dashboard' element={<Dashboard />} />
+            <Route path='/list-curriculum' element={<ListCurriculum />} />
+            <Route path='/cas' element={<Cas />} />
+          </Route>
+          <Route path='/SSO' element={<Login />}></Route>
+          <Route path='/unauthorized' element={<Unauthorized />}></Route>
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </React.Suspense>
-      <App/>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

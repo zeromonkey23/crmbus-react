@@ -1,0 +1,197 @@
+{
+  "currentPage": 1,
+  "currentPageSize": 5,
+  "listData": [
+    {
+      "id": "b4071807-c0d9-4af2-990c-ec2d9d11c0bc",
+      "validFromBacth": "2510",
+      "currChnageInfo": "<p>aragraf pada curr change info (Test Automation)</p>",
+      "status": "Continue to phase 1",
+      "createDate": "2023-01-11T11:21:04.126525",
+      "createBy": "Dicky Surya Dwi Putra, S.Kom., M.Kom.",
+      "typeCurriculums": "Cross Streaming",
+      "version": "-",
+      "academic": {
+        "programId": "KBCSC",
+        "programName": "Computer Science",
+        "acadCareerId": "RS1",
+        "acadCarrerName": "Undergraduate",
+        "acadCarrerGradingScheme": null,
+        "acadOrgId": "CSCI",
+        "acadOrgName": "Computer Science",
+        "acadGroupId": "SOCS",
+        "acadGroupName": "School of Computer Science",
+        "institutionId": "BNS01",
+        "intritutionName": "BINUS University"
+      },
+      "stausFase": [
+        {
+          "faseName": "FaseNol",
+          "status": "Continue to phase 1",
+          "forRole": ""
+        },
+        {
+          "faseName": "FaseSatu",
+          "status": "Continue to phase 2",
+          "forRole": ""
+        },
+        {
+          "faseName": "FaseDua",
+          "status": "Waiting For Review",
+          "forRole": "ARC Staff"
+        }
+      ]
+    },
+    {
+      "id": "59b85143-155e-4dfa-ab50-6010b43ad593",
+      "validFromBacth": "2509",
+      "currChnageInfo": "<p>aragraf pada curr change info (Test Automation)</p>",
+      "status": "Continue to phase 1",
+      "createDate": "2023-01-10T12:06:53.0434292",
+      "createBy": "Dicky Surya Dwi Putra, S.Kom., M.Kom.",
+      "typeCurriculums": "Cross Streaming",
+      "version": "-",
+      "academic": {
+        "programId": "KBCSC",
+        "programName": "Computer Science",
+        "acadCareerId": "RS1",
+        "acadCarrerName": "Undergraduate",
+        "acadCarrerGradingScheme": null,
+        "acadOrgId": "CSCI",
+        "acadOrgName": "Computer Science",
+        "acadGroupId": "SOCS",
+        "acadGroupName": "School of Computer Science",
+        "institutionId": "BNS01",
+        "intritutionName": "BINUS University"
+      },
+      "stausFase": [
+        {
+          "faseName": "FaseNol",
+          "status": "Continue to phase 1",
+          "forRole": ""
+        },
+        {
+          "faseName": "FaseSatu",
+          "status": "Continue to phase 2",
+          "forRole": ""
+        },
+        {
+          "faseName": "FaseDua",
+          "status": "Waiting For Review",
+          "forRole": "ARC Staff"
+        }
+      ]
+    },
+    {
+      "id": "e3f9f626-1f57-4eb4-8662-4256d5a7f1fc",
+      "validFromBacth": "2508",
+      "currChnageInfo": "<p>aragraf pada curr change info (Test Automation)</p>",
+      "status": "Continue to phase 1",
+      "createDate": "2023-01-10T11:41:19.8239246",
+      "createBy": "Dicky Surya Dwi Putra, S.Kom., M.Kom.",
+      "typeCurriculums": "Cross Streaming",
+      "version": "-",
+      "academic": {
+        "programId": "KBCSC",
+        "programName": "Computer Science",
+        "acadCareerId": "RS1",
+        "acadCarrerName": "Undergraduate",
+        "acadCarrerGradingScheme": null,
+        "acadOrgId": "CSCI",
+        "acadOrgName": "Computer Science",
+        "acadGroupId": "SOCS",
+        "acadGroupName": "School of Computer Science",
+        "institutionId": "BNS01",
+        "intritutionName": "BINUS University"
+      },
+      "stausFase": [
+        {
+          "faseName": "FaseNol",
+          "status": "Continue to phase 1",
+          "forRole": ""
+        },
+        {
+          "faseName": "FaseSatu",
+          "status": "Continue to phase 2",
+          "forRole": ""
+        },
+        {
+          "faseName": "FaseDua",
+          "status": "Waiting For Review",
+          "forRole": "ARC Staff"
+        }
+      ]
+    },
+    {
+      "id": "bcff52f0-aa16-4c4c-8325-331ab1175bce",
+      "validFromBacth": "2507",
+      "currChnageInfo": "<p>aragraf pada curr change info (Test Automation)</p>",
+      "status": "Continue to phase 1",
+      "createDate": "2023-01-09T15:10:15.6837867",
+      "createBy": "Dicky Surya Dwi Putra, S.Kom., M.Kom.",
+      "typeCurriculums": "Cross Streaming",
+      "version": "-",
+      "academic": {
+        "programId": "KBCSC",
+        "programName": "Computer Science",
+        "acadCareerId": "RS1",
+        "acadCarrerName": "Undergraduate",
+        "acadCarrerGradingScheme": null,
+        "acadOrgId": "CSCI",
+        "acadOrgName": "Computer Science",
+        "acadGroupId": "SOCS",
+        "acadGroupName": "School of Computer Science",
+        "institutionId": "BNS01",
+        "intritutionName": "BINUS University"
+      },
+      "stausFase": [
+        {
+          "faseName": "FaseNol",
+          "status": "Continue to phase 1",
+          "forRole": ""
+        },
+        {
+          "faseName": "FaseSatu",
+          "status": "Continue to phase 2",
+          "forRole": ""
+        }
+      ]
+    },
+    {
+      "id": "10c6a8e4-526a-438b-af6c-11eccc6f4352",
+      "validFromBacth": "2506",
+      "currChnageInfo": "<p>aragraf pada curr change info (Test Automation)</p>",
+      "status": "Continue to phase 1",
+      "createDate": "2023-01-09T14:17:32.3375145",
+      "createBy": "Dicky Surya Dwi Putra, S.Kom., M.Kom.",
+      "typeCurriculums": "Cross Streaming",
+      "version": "-",
+      "academic": {
+        "programId": "KBCSC",
+        "programName": "Computer Science",
+        "acadCareerId": "RS1",
+        "acadCarrerName": "Undergraduate",
+        "acadCarrerGradingScheme": null,
+        "acadOrgId": "CSCI",
+        "acadOrgName": "Computer Science",
+        "acadGroupId": "SOCS",
+        "acadGroupName": "School of Computer Science",
+        "institutionId": "BNS01",
+        "intritutionName": "BINUS University"
+      },
+      "stausFase": [
+        {
+          "faseName": "FaseNol",
+          "status": "Continue to phase 1",
+          "forRole": ""
+        },
+        {
+          "faseName": "FaseSatu",
+          "status": "Continue to phase 2",
+          "forRole": ""
+        }
+      ]
+    }
+  ],
+  "count": 250
+}
