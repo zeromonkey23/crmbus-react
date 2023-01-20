@@ -1,8 +1,10 @@
 import { useState } from 'react';
 
 const useView = () => {
-  const [something, setSomething] = useState('Dashboard View');
-  return { something };
+  const [batchStart, setBatchStart] = useState<number>(2018);
+  const [batchEnd, setBatchEnd] = useState<number>(2022);
+
+  return { batchStart, batchEnd };
 };
 
 export default useView;

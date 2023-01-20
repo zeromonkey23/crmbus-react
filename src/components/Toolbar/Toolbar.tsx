@@ -46,7 +46,7 @@ const Toolbar = () => {
             </div>
 
             {/* account information container */}
-            <div className='hidden p-3 absolute w-72 h-36 border right-0  bg-white d-block rounded shadow-sm peer-hover:flex hover:flex'>
+            <div className='hidden p-3 absolute w-64 h-40 border right-0  bg-white d-block rounded shadow-sm peer-hover:flex hover:flex'>
               <Account isToolbar={true} />
             </div>
           </div>

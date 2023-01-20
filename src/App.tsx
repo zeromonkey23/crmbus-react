@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      <div className='bg-green-500 flex'>
+      <div className='flex'>
         <div className='bg-white w-72 shadow-md border-r-2'>
           <Sidenav />
         </div>

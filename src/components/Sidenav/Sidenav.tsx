@@ -1,12 +1,25 @@
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import logo from '../../assets/images/Logo-binus.png';
 import { MENULIST } from '../../data/menu';
+import { getProfileData } from '../../helpers/AuthFunction';
 import Account from '../Account/Account';
+
+import type { RoleList } from './Sidenav.types';
 
 const Sidenav = () => {
   const [menuList, setMenuList] = useState(MENULIST);
+  const [role, setRole] = useState<RoleList[]>(() => {
+    const { role } = getProfileData();
+    if (role) {
+      const parsed = JSON.parse(role);
+      return parsed;
+    } else {
+      return [];
+    }
+  });
+
   return (
     <>
       <div className='w-full overflow-auto h-full'>
@@ -18,8 +31,14 @@ const Sidenav = () => {
 
         <div className='w-full p-3 '>
           <select name='role' id='role' className='w-full rounded p-1 border'>
-            <option value='dean'>Dean</option>
-            <option value='ARC'>ARC</option>
+            {role &&
+              role.map((roleData: RoleList) => {
+                return (
+                  <option value={roleData.userRoleId} key={roleData.userRoleId}>
+                    {roleData.position}
+                  </option>
+                );
+              })}
           </select>
         </div>
 

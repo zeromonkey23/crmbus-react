@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 import Cas from './pages/Cas';
 import Dashboard from './pages/Dashboard';
@@ -22,6 +22,7 @@ ReactDOM.render(
             <Route path='/dashboard' element={<Dashboard />} />
             <Route path='/list-curriculum' element={<ListCurriculum />} />
             <Route path='/cas' element={<Cas />} />
+            <Route path='/' element={<Navigate to='/dashboard' replace />} />
           </Route>
           <Route path='/SSO' element={<Login />}></Route>
           <Route path='/unauthorized' element={<Unauthorized />}></Route>
