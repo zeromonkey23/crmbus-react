@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -18,9 +14,24 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "~/assets/*": ["./src/assets/*"],
+      "~/components/*": ["./src/components/*"],
+      "~/constants/*": ["./src/constants/*"],
+      "~/data/*": ["./src/data/*"],
+      "~/helpers/*": ["./src/helpers/*"],
+      "~/pages/*": ["./src/pages/*"],
+      "~/types/*": ["./src/types/*"],
+      "~/cas/*": ["./src/pages/Cas/*"],
+      "~/curriculumDevelopment/*": ["./src/pages/CurriculumDevelopment/*"],
+      "~/dashboard/*": ["./src/pages/Dashboard/*"],
+      "~/listCurriculum/*": ["./src/pages/ListCurriculum/*"],
+      "~/login/*": ["./src/pages/Login/*"],
+      "~/not-found/*": ["./src/pages/NotFound/*"],
+      "~/report/*": ["./src/pages/Report/*"],
+      "~/unauthorize/*": ["./src/pages/Unauthorize/*"]
+    }
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }

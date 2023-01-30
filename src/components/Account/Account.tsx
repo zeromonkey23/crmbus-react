@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import AvatarImage from '../../assets/images/avatar.png';
 import { clearSession, getProfileData } from '../../helpers/AuthFunction';
 
-import { AccountType } from './Account.types';
+import type { AccountType } from './Account.types';
 
 const Account = (prop: AccountType) => {
   const { isToolbar } = prop;

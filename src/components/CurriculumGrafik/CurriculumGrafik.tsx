@@ -3,7 +3,8 @@ import EChartsReact from 'echarts-for-react';
 import type { EChartsOption } from 'echarts-for-react/lib/types';
 
 import GrafikImage from '../../assets/images/Grafik.png';
-import { getHeadersData } from '../../helpers/RequestHelper';
+import { REQUEST_TYPE } from '../../constants/enums';
+import { getRequestInit } from '../../helpers/RequestHelper';
 
 import type { CurriculumGrafikType } from './CurriculumGrafik.types';
 
@@ -44,11 +45,9 @@ const CurriculumGrafik = (prop: CurriculumGrafikType) => {
   const getGrafikData = async () => {
     setGrafikOption(null);
     const url = `${process.env.REACT_APP_API_URL}api/v1/Dashboard/get_dashboard_for_grafik_by_range_batch/${prop.batchStart}/${prop.batchEnd}`;
+    const requestOption = getRequestInit(REQUEST_TYPE.get, null);
 
-    return await fetch(url, {
-      cache: 'default',
-      headers: getHeadersData(),
-    })
+    return fetch(url, requestOption)
       .then((res) => {
         return res.json();
       })

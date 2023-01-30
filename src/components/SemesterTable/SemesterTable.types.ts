@@ -1,3 +1,3 @@
-export interface SemesterTable {
+export interface SemesterTableTypes {
   title?: string;
 }

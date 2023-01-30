@@ -14,3 +14,10 @@ export enum APP_AUTH_TOKEN {
   prefixExpiresAt = 'CRMBUS_expires_at',
   prefixPhoto = 'CRMBUS_photo',
 }
+
+export enum REQUEST_TYPE {
+  get = 'GET',
+  post = 'POST',
+  put = 'PUT',
+  delete = 'DELETE'
+}

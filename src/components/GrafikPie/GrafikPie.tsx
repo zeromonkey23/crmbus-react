@@ -3,7 +3,8 @@ import EChartsReact from 'echarts-for-react';
 import type { EChartsOption } from 'echarts-for-react/lib/types';
 
 import GrafikPieUrl from '../../assets/images/GrafikPie.png';
-import { getHeadersData } from '../../helpers/RequestHelper';
+import { REQUEST_TYPE } from '../../constants/enums';
+import { getRequestInit } from '../../helpers/RequestHelper';
 import type { CurriculumGrafikPieParams } from '../CurriculumGrafik/CurriculumGrafik.types';
 
 import { CurriculumGrafikPieData } from './GrafikPie.types';
@@ -64,12 +65,9 @@ const GrafikPie = () => {
       acadProg: [],
       acadGroup: [],
     };
+    const requestOption = getRequestInit(REQUEST_TYPE.post, payload);
 
-    return fetch(url, {
-      method: 'POST',
-      headers: getHeadersData(),
-      body: JSON.stringify(payload),
-    })
+    return fetch(url, requestOption)
       .then((res) => {
         return res.json();
       })
@@ -95,7 +93,7 @@ const GrafikPie = () => {
         setGrafikOption(tempGrafikOption);
       })
       .catch((error) => {
-        console.log({ error });
+        console.error({ error });
       });
   };
 

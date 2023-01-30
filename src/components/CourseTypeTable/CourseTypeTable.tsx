@@ -1,16 +1,16 @@
 import React from 'react';
 
-import { SemesterTableTypes } from './SemesterTable.types';
+import { CourseTypeTableTypes } from './CourseTypeTable.types';
 
-const SemesterTable = (prop: SemesterTableTypes) => {
+const CourseTypeTable = (prop: CourseTypeTableTypes) => {
   return (
     <>
       <table className='table-auto bg-white border rounded w-full text-sm'>
         <thead>
           <tr>
             <th className='border font-normal'>Name</th>
+            <th className='border font-normal'>Join Course Type</th>
             <th className='border font-normal'>SCU Type</th>
-            <th className='border font-normal'>Split Period</th>
             <th className='border font-normal'>SCU Total</th>
             <th className='border font-normal'>Action</th>
           </tr>
@@ -32,4 +32,4 @@ const SemesterTable = (prop: SemesterTableTypes) => {
   );
 };
 
-export default SemesterTable;
+export default CourseTypeTable;
